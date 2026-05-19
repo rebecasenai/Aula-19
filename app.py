@@ -11,7 +11,7 @@ from config import RECEITA_SCHEMA, SYSTEM_INSTRUCTION
 
 
 load_dotenv()
-GEMINI_API_KEY = os.getenv("AIzaSyDuM76fr9owmSltJP-cfwId8VSl4FwDvg8")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 client = genai.Client(api_key=GEMINI_API_KEY)
 
 app = Flask(__name__)
